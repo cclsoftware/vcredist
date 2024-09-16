@@ -4,7 +4,7 @@ SetOutPath "$TEMP"
   File "${CCL_BASEDIR}\submodules\vcredist\VC_redist.arm64.exe"
   !define CRTINSTALLER "$OUTDIR\VC_redist.arm64.exe"
 !else
-  !ifdef X64
+  !ifdef X64_COMPATIBLE
     File "${CCL_BASEDIR}\submodules\vcredist\VC_redist.x64.exe"
     !define CRTINSTALLER "$OUTDIR\VC_redist.x64.exe"
   !else
